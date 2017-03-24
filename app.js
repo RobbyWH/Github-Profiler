@@ -10,8 +10,8 @@ const options = {
     'user-agent': 'nodejs'
   }
 }
-let request = https.request(options, (result) => {
-  console.log("Got response: ", result.statusCode);
+let request = https.request(options, (response) => {
+  console.log("Got response: ", response);
 })
 
 request.end()
